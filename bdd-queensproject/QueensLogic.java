@@ -2,15 +2,6 @@ import net.sf.javabdd.BDD;
 import net.sf.javabdd.BDDFactory;
 import net.sf.javabdd.JFactory;
 
-/**
- * This class implements a basic logic for the n-queens problem to get you started. 
- * Actually, when inserting a queen, it only puts the queen where requested
- * and does not keep track of which other positions are made illegal by this move.
- * 
- * @author Mai Ajspur
- * @version 16.02.2018
- */
-
 public class QueensLogic implements IQueensLogic{
     private int size;		// Size of quadratic game board (i.e. size = #rows = #columns)
     private int[][] board;	// Content of the board. Possible values: 0 (empty), 1 (queen), -1 (no queen allowed)
