@@ -1,0 +1,64 @@
+# Mandatory assignment 8 (exercises11.pdf)
+
+## 1
+
+Maximize: (−2)x1 + (3)x2
+
+Subject to:
+     -x1 + x2  <=  3
+-(1/2)x1 + x2  <=  4
+ (1/4)x1 - x2  <=  1
+        x1,x2  >=  0
+
+## 2
+
+Maximize: z
+
+Subject to:
+x3 = 3 +       x1 -    x2
+x4 = 4 +  (1/2)x1 -    x2
+x5 = 1 -  (1/4)x1 +    x2
+z  =   -    (2)x1 + (3)x2
+x1,x2,x3,x4,x5 >= 0
+
+## 3.
+### 3.a.
+
+Initial dictionary:
+x3 = 3 +       x1 -    x2
+x4 = 4 +  (1/2)x1 -    x2
+x5 = 1 -  (1/4)x1 +    x2
+z  =   -    (2)x1 + (3)x2
+
+Dictionary after interation 1:
+x2 = 3 +       x1 -    x3
+x4 = 1 -  (1/2)x1 +    x3
+x5 = 4 -  (5/4)x1 -    x3
+z  = 9 +       x1 - (3)x3
+
+Dictionary after interation 2:
+x1 = 2   +   (2)x3 -   (2)x4
+x2 = 5   +      x3 -   (2)x4
+x5 = 1/2 - (7/2)x3 + (5/2)x4
+z  = 11  -      x3 -   (2)x4
+
+### 3.b.
+
+Initial point: (0,0)
+Point after interation 1: (0,3)
+Point after interation 2: (2,5)
+
+## 4.
+
+x1=2 and x2=5
+
+## 5.
+### 5.a.
+
+Yes (4,0)
+
+### 5.b.
+
+No, beacuse it's but unbounded.
+
+The maximum value is point along the contraint `x2 = (1/4)x1 - 1` where `x1` is infinitly big. So the limit as `x1 -> inf` for `x2 = (1/4)x1 - 1`.
