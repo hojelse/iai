@@ -40,7 +40,7 @@ public class QueensLogic implements IQueensLogic{
         // create BDD
         this.bdd = setupBDD();
 
-        // predict();
+        crossOut();
     }
 
     private BDD setupBDD() {
@@ -150,10 +150,10 @@ public class QueensLogic implements IQueensLogic{
         board[col][row] = 1;
         bdd = bdd.restrict(x(col, row));
 
-        traverse();
+        crossOut();
     }
 
-    private void traverse() {
+    private void crossOut() {
         for (int row = 0; row < size; row++) {
             for (int col = 0; col < size; col++) {
                 if (board[col][row] != 0) continue;
